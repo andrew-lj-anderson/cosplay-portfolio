@@ -30,6 +30,7 @@ html {
   background-repeat: repeat;
   height: 250px;
 }
+
 body {
   background-color: #ffeed7;
   padding: 20px;
@@ -41,21 +42,33 @@ body {
   filter:drop-shadow(1px 1px 5px rgba(73, 41, 47, .75));
 }
 
+main {
+  min-height: 50vh;
+}
+
+footer {
+  background-color:#c22f4c;
+  padding: 20px;
+}
+
 h2 {
   font-family: "Zepter";
   font-size: 36px;
   color:#49292f
 }
 
+p {
+  text-align: center;
+}
+
 p, ul li {
   font-family: "Louis George Cafe";
   font-size: 20px;
   color: #49292f;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.active {
-  background: #ec8297;
-}
 .container {
   position: relative;
   text-align: center;
@@ -82,6 +95,14 @@ p, ul li {
   color: #49292f;
   bottom: 8px;
   left: 16px;
+}
+
+ul.awards {
+  outline:#49292f;
+  outline-style: double;
+  outline-width: 4px;
+  padding-top:20px;
+  padding-bottom:20px;
 }
 
 ul.nav {
@@ -112,7 +133,6 @@ ul.nav2 {
   align-items: center;
   margin: 0;
   padding: 0;
-  background-color: #c22f4c;
   display: flex;
 }
 
@@ -122,8 +142,34 @@ ul.nav2 li a {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 14px;
+  background-color: #c22f4c;
 }
 
 ul.nav2 li a:hover {
   background-color: #e68ca2;
+}
+
+ul.bottomnav {
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  margin: 0;
+  padding: 15px;
+  display: flex;
+}
+
+ul.bottomnav li a {
+  color:white;
+}
+
+p.bottomnav {
+  color:white;
+}
+
+p.bottomnavlogo {
+  color: white;
+  font-family: "Starborn";
 }
