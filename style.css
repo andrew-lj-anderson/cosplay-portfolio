@@ -1,0 +1,129 @@
+@font-face {
+  font-family: 'Starborn'; /* A name you choose to use later in your CSS */
+  src: url('fonts/Starborn.ttf') format('truetype'); /* Path to your .ttf file */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Zepter';
+  src: url('fonts/Zepter_Pro.ttf') format('truetype');
+  font-weight: normal;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: 'Louis George Cafe';
+  src: url('fonts/LouisGeorgeCafe.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+	font-family: "Starborn";
+	font-size: 42px;
+  color: #c22f4c;
+}
+
+html {
+  background-image: url("images/background.svg");
+  background-repeat: repeat;
+  height: 250px;
+}
+body {
+  background-color: #ffeed7;
+  padding: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 700px;
+  min-width: 500px;
+  margin: auto;
+  filter:drop-shadow(1px 1px 5px rgba(73, 41, 47, .75));
+}
+
+h2 {
+  font-family: "Zepter";
+  font-size: 36px;
+  color:#49292f
+}
+
+p, ul li {
+  font-family: "Louis George Cafe";
+  font-size: 20px;
+  color: #49292f;
+}
+
+.active {
+  background: #ec8297;
+}
+.container {
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.container .child {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.container img {
+  filter:drop-shadow(0px 0px 5px #49292f);
+}
+
+.insta {
+  filter: invert();
+}
+
+.photocred div, .photocred a {
+  font-family: "Louis George Cafe";
+  font-size: 13px;
+  color: #49292f;
+  bottom: 8px;
+  left: 16px;
+}
+
+ul.nav {
+  list-style-type: none;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #c22f4c;
+  display: flex;
+}
+
+ul.nav li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.nav li a:hover {
+  background: #e68ca2;
+}
+
+ul.nav2 {
+  list-style-type: none;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  background-color: #c22f4c;
+  display: flex;
+}
+
+ul.nav2 li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+ul.nav2 li a:hover {
+  background-color: #e68ca2;
+}
