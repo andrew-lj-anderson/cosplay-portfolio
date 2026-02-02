@@ -102,7 +102,7 @@ hr {
   filter:drop-shadow(0px 0px 5px rgba(73, 41, 47,.5));
 }
 
-.photocred div, .photocred a, .photocred {
+.photocred div, .photocred a, .photocred, .home {
   font-family:"Louis George Cafe";
   font-size: 13px;
   color: #49292f;
