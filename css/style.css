@@ -1,22 +1,22 @@
 @font-face {
   font-family:'Starborn'; /* A name you choose to use later in your CSS */
-  src: url('fonts/Starborn.ttf') format('truetype'); /* Path to your .ttf file */
-  font-weight: normal;
-  font-style: normal;
+  src:url("fonts/Starborn.ttf") format('truetype'); /* Path to your .ttf file */
+  font-weight:normal;
+  font-style:normal;
 }
 
 @font-face {
   font-family:'Zepter';
-  src: url('fonts/Zepter_Pro.ttf') format('truetype');
-  font-weight: normal;
-  font-style: bold;
+  src:url('fonts/Zepter_Pro.ttf') format('truetype');
+  font-weight:normal;
+  font-style:bold;
 }
 
 @font-face {
   font-family:'Louis George Cafe';
-  src: url('fonts/LouisGeorgeCafe.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+  src:url('fonts/LouisGeorgeCafe.ttf') format('truetype');
+  font-weight:normal;
+  font-style:normal;
 }
 
 h1 {
