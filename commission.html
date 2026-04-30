@@ -6,43 +6,65 @@ January 2026
 -->
 
 <html style="background-image: url('./images/background.svg'); background-repeat: repeat;" lang="en">
+
 <head>
 	<title>Commission Work | Dandy Andy Cos</title>
 	<!-- FOR GITHUB PAGES HOSTING -->
-	<!-- <base href="/cosplay-portfolio/"> -->
+	<base href="/cosplay-portfolio/">
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
 </head>
 
 <body>
 	<!-- use the header area for the website name or logo -->
 	<header>
-		<h1><a href="index.html">Dandy Andy Cos</a></h1>
+		<!-- mobile header -->
+		<div class="mobile">
+			<a style="text-align:center" href="index.html">
+				<h1>Dandy Andy Cos</h1>
+			</a>
+		</div>
+		<!-- desktop header -->
+		<a class="tablet-desktop" href="index.html"><img src="images/header_bg.png" alt="Dandy Andy Cos"></a>
 	</header>
 	<!-- use the nav area to add hyperlinks to other pages within the site-->
-	<nav>
-		<ul class="nav">
-			<li><a href="about.html">About</a></li>
-			<li><a href="personal.html">My Work</a></li>
-			<li><a href="buildbooks.html">Build Books</a></li>
-			<li><a href="contact.html">Contact</a></li>
-		</ul>
-	</nav>
+	<nav class="mobile-nav">
+			<div id="menu-links">
+				<a href="about.html">About</a>
+				<a href="personal.html">My Work</a>
+				<a href="commission.html">Commissions</a>
+				<a href="contact.html">Contact</a>
+			</div>
+			<a class="menu-icon" onclick="hamburger()">
+				<div>&#9776;</div>
+			</a>
+		</nav>
+		<nav class="tablet-desktop">
+			<ul>
+				<li><a href="about.html">About</a></li>
+				<li><a href="personal.html">My Work</a></li>
+				<li><a href="commission.html">Commissions</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
 	<br>
-	<!-- Second nav for personal vs commission work-->
-	<nav>
-		<ul class="nav2">
-			<li><a href="personal.html">Personal Projects</a></li>
-			<li><a href="commission.html">Commissions</a></li>
-		</ul>
-	</nav>
 	<!-- use the main area to add to the main content of the webpage-->
 	<main>
-		<p style="text-align:left">Commissions are currently available on a case by case basis. Contact me for more information!</p>
-		<div class="project">
+		<div id="comm-info">
+			<p>Commissions are currently available on a case by case basis. Please email me to request a quote!</p>
+			<!-- <p>Commissions are currently available on a case by case basis. Click <a href="#quote">here</a> to request a
+				quote.</p> -->
+		</div>
+		<article class="project">
 			<div class="text">
 				<h2>Super Sonico</h2>
-				<p>Client: <a style="color:inherit" href="https://www.instagram.com/inzayne.cosplay">@inzayne.cosplay</a></p>
+				<p>Client: <a style="color:inherit"
+						href="https://www.instagram.com/inzayne.cosplay">@inzayne.cosplay</a></p>
 				<ul>
 					<li>Black scuba-knit minidress</li>
 					<li>Glitter HTV detailing</li>
@@ -54,12 +76,11 @@ January 2026
 			<div class="pics">
 				<ul>
 					<li><img src="images/sonico.JPG" width="250" height="auto"></li>
-					<li><img src="images/sonicofigure.JPG" alt="Picture of Super Sonico Cosplay Back View" width="250" height="auto"></li>
 				</ul>
 			</div>
-		</div>
+		</article>
 
-		<div class="project">
+		<article class="project">
 			<div class="text">
 				<h2>Luna Wright</h2>
 				<h3>Doctor Stone</h3>
@@ -73,28 +94,98 @@ January 2026
 				</ul>
 			</div>
 			<div class="pics">
-				<ul>
+				<ul id="luna-pics">
 					<li><img src="images/luna1.JPG" width="200" height="auto"></li>
 					<li><img src="images/lunaref.JPG" width="200" height="auto"></li>
 				</ul>
 			</div>
-		</div>
+		</article>
+
+		<!-- <div id="quote">
+			<h2>Request a Quote</h2>
+
+			<form>
+				<fieldset>
+					<legend>Contact Information</legend>
+					<label for="name">Name</label>
+					<input type="text" id="name" name="name" required>
+
+					<label for="email">Email</label>
+					<input type="email" id="email" name="email" required>
+				</fieldset>
+
+				<fieldset>
+					<legend>Character Information</legend>
+					<label for="character">Character</label>
+					<input type="text" id="character" name="character" required>
+
+					<label for="source">Source Material</label>
+					<input type="text" id="source" name="source" required>
+
+					<label for="budget">Budget</label>
+					<textarea id="budget" name="budget" rows="2" cols="50"
+						placeholder="Please provide an estimated budget."></textarea>
+
+					<label for="details">Additional Details</label>
+					<textarea id="details" name="details" rows="4" cols="50"
+						placeholder="Include any specific details or requests for your commission here."></textarea>
+				</fieldset>
+
+				<h2>Terms and Conditions</h2>
+				<ul>
+					<li>By filling out this form, you are not guaranteed a commission slot. I will contact over email
+						you with a quote, and discussion will proceed from there.</li>
+					<li>All commission work is custom-made and non-refundable. A 50% deposit is required before I will
+						begin.</li>
+				</ul>
+				<fieldset>
+					<label for="ack">
+						<input type="checkbox" name="ack" id="ack" required>
+						I have read and understand the above terms and conditions.
+					</label>
+				</fieldset>
+
+				<input type="submit" id="submit" value="Submit Form" class="btn">
+
+			</form>
+		</div> -->
 	</main>
 	<footer>
-		<nav>
-			<ul class="bottomnav">
-				<ul class="bottomnav">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="personal.html">My Work</a></li>
-				<li><a href="buildbooks.html">Build Books</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-			</ul>
-		</nav>
-		<p class="bottomnav">© 2026 Andrew Anderson</p>
-		<p class="bottomnavlogo">Dandy Andy Cos</p>
+		<div id="bottomnav">
+			<div class="mobile">
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="personal.html">My Work</a></li>
+						<li><a href="commission.html">Commissions</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+				<p>© 2026 Andrew Anderson</p>
+				<p style="font-family:'Starborn'">Dandy Andy Cos</p>
+			</div>
+			<div class="tablet-desktop">
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="personal.html">My Work</a></li>
+						<li><a href="commission.html">Commissions</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+				<ul>
+					<li><a href="mailto:anderan2@mail.gvsu.edu"><img src="images/email.svg" alt="Email Icon"></a></li>
+					<li><a href="https://www.instagram.com/dandy.andy.cos"><img src="images/instagram.svg"
+								alt="Instagram Icon"></a></li>
+				</ul>
+				<p>© 2026 Andrew Anderson</p>
+				<p style="font-family:'Starborn'">Dandy Andy Cos</p>
+			</div>
+		</div>
 	</footer>
+	<script src="scripts/scripts.js"></script>
 </body>
 
 </html>

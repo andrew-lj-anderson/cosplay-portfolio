@@ -10,53 +10,129 @@ January 2026
 <head>
 	<title>Home | Dandy Andy Cos</title>
 	<!-- FOR GITHUB PAGES HOSTING -->
-	<!-- <base href="/cosplay-portfolio/"> -->
+	<base href="/cosplay-portfolio/">
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description"
+		content="Cosplay portfolio website showcasing the work of Dandy Andy Cos, a cosplayer, sewist, and drag artist. Explore his creations, learn about his journey, and get in touch!">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
 </head>
 
 <body>
 	<!-- use the header area for the website name or logo -->
-	<header>
-		<h1><a href="index.html">Dandy Andy Cos</a></h1>
-	</header>
-	<!-- use the nav area to add hyperlinks to other pages within the site-->
-	<nav>
-		<ul class="nav">
-			<li><a href="about.html">About</a></li>
-			<li><a href="personal.html">My Work</a></li>
-			<li><a href="buildbooks.html">Build Books</a></li>
-			<li><a href="contact.html">Contact</a></li>
-		</ul>
-	</nav>
-	<!-- use the main area to add to the main content of the webpage-->
-	<main>
-		<div class="home">
+	<div id="container">
+		<header>
+			<!-- mobile header -->
+			<div class="mobile">
+				<a style="text-align:center" href="index.html">
+					<h1>Dandy Andy Cos</h1>
+				</a>
+			</div>
+			<!-- desktop header -->
+			<a class="tablet-desktop" href="index.html"><img src="images/header_bg.png" alt="Dandy Andy Cos"></a>
+		</header>
+		<!-- use the nav area to add hyperlinks to other pages within the site-->
+		<nav class="mobile-nav">
+			<div id="menu-links">
+				<a href="about.html">About</a>
+				<a href="personal.html">My Work</a>
+				<a href="commission.html">Commissions</a>
+				<a href="contact.html">Contact</a>
+			</div>
+			<a class="menu-icon" onclick="hamburger()">
+				<div>&#9776;</div>
+			</a>
+		</nav>
+		<nav class="tablet-desktop">
 			<ul>
-				<li><img src="images/mtt_home.JPG"></li>
-				<li><img src="images/bowser_home.JPG"></li>
-				<li><img src="images/sweetheart_home.JPG"></li>
-			</ul>
-			<div>Center photo by <a style="color:inherit"href="https://www.instagram.com/morgaroni_photography"> @morgaroni_photography</a></div>
-
-			<h1 style="font-size:64px; text-align:center">Dandy Andy</h1>
-			<h2 style="text-align:center">Cosplayer | Sewist | Drag Artist</h2>
-			<br>
-		</div>
-	</main>
-	<footer>
-		<nav>
-			<ul class="bottomnav">
-				<li><a href="index.html">Home</a></li>
 				<li><a href="about.html">About</a></li>
 				<li><a href="personal.html">My Work</a></li>
-				<li><a href="buildbooks.html">Build Books</a></li>
+				<li><a href="commission.html">Commissions</a></li>
 				<li><a href="contact.html">Contact</a></li>
 			</ul>
 		</nav>
-		<p class="bottomnav">© 2026 Andrew Anderson</p>
-		<p class="bottomnavlogo">Dandy Andy Cos</p>
-	</footer>
+		<!-- use the main area to add to the main content of the webpage-->
+		<main>
+			<!-- desktop home page -->
+			<div class="tablet-desktop">
+				<div class="home">
+					<h1>Dandy Andy</h1>
+					<h2>Cosplayer | Sewist | Drag Artist</h2>
+					<div class="grid">
+						<figure class="photolink">
+							<a href="about.html"><img src="images/mtt_home.JPG" alt="andy in his mettaton cosplay"></a>
+							<figcaption class="pictext">About Me</figcaption>
+						</figure>
+						<figure class="photolink">
+							<a href="personal.html"><img src="images/bowser_home.JPG"
+									alt="andy in his bowswer cosplay"></a>
+							<figcaption class="pictext">My Work</figcaption>
+						</figure>
+						<figure class="photolink">
+							<a href="contact.html"><img src="images/sweetheart_home.JPG"
+									alt="andy in his sweetheart cosplay"></a>
+							<figcaption class="pictext">Contact Me!</figcaption>
+						</figure>
+					</div>
+					<div class="photocred">Center photo by <a style="color:inherit"
+							href="https://www.instagram.com/morgaroni_photography">
+							@morgaroni_photography</a></div>
+					<br><br>
+				</div>
+			</div>
+			<!-- mobile home page -->
+			<div class="mobile">
+				<div class="home">
+					<div id="homephoto">
+						<img class="round" src="images/mtt_home_mobile.png" alt="Andy in his Mettaton cosplay">
+					</div>
+					<h2>Cosplayer | Sewist<br>Drag Artist</h2>
+				</div>
+			</div>
+
+		</main>
+		<footer>
+			<div id="bottomnav">
+				<div class="mobile">
+					<nav>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="personal.html">My Work</a></li>
+						<li><a href="commission.html">Commissions</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>
+					<p>© 2026 Andrew Anderson</p>
+					<p style="font-family:'Starborn'">Dandy Andy Cos</p>
+				</div>
+				<div class="tablet-desktop">
+					<nav>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="personal.html">My Work</a></li>
+						<li><a href="commission.html">Commissions</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>
+					<ul>
+						<li><a href="mailto:anderan2@mail.gvsu.edu"><img src="images/email.svg" alt="Email Icon"></a>
+						</li>
+						<li><a href="https://www.instagram.com/dandy.andy.cos"><img src="images/instagram.svg"
+									alt="Instagram Icon"></a></li>
+					</ul>
+					<p>© 2026 Andrew Anderson</p>
+					<p style="font-family:'Starborn'">Dandy Andy Cos</p>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="scripts/scripts.js"></script>
 </body>
 
 </html>
